@@ -18,5 +18,7 @@ int main(int, char *[])
     std::cout << "HAVE_CLOCK_GETTIME: no" << std::endl;
 #endif
 
+    printf("timespec_get: %p\n", timespec_get);
+
     return 0;
 }
