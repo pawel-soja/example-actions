@@ -2,6 +2,7 @@ cmake_minimum_required(VERSION 3.18)
 project(main CXX)
 
 include (CheckFunctionExists)
+include (CheckLibraryExists)
 
 CHECK_LIBRARY_EXISTS(rt clock_gettime "" HAVE_CLOCK_GETTIME)
 if (NOT HAVE_CLOCK_GETTIME)
